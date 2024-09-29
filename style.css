@@ -91,3 +91,39 @@ form button{
     font-size: 1.15rem;
     cursor: pointer;
 }
+
+@media (max-width: 350px) {
+    .container {
+        width: 85vw; /* Adjust the container width */
+        padding: 1rem; /* Reduce padding to fit the small screen */
+    }
+
+    .container h2 {
+        margin-left: 0; /* Remove left margin */
+        text-align: center; /* Center the heading */
+    }
+
+    .dropdown {
+        display: flex;
+        justify-content: space-between; /* Keep items on the same line */
+        gap: 0.5rem; /* Add some gap between elements */
+    }
+
+    .select-container {
+        width: auto; /* Prevent select-container from taking full width */
+    }
+
+    form input, form button {
+        height: 2.5rem; /* Reduce height for inputs and buttons */
+        font-size: 0.9rem; /* Reduce font size */
+    }
+
+    .msg {
+        font-size: medium; /* Adjust font size */
+        padding: 15px; /* Adjust padding */
+    }
+
+    .select-container img {
+        max-width: 1.5rem; /* Reduce image size */
+    }
+}
